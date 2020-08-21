@@ -1,0 +1,384 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: inline;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+.jumbotron {
+    width: 100%;
+    height: 500px;
+    border: 5px solid darkgreen;
+    padding: 0 auto 10px;
+    background-image: url('../asset/logo_u_know_media_update.png');
+    background-attachment: fixed;
+    background-position: 0 +120%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+}
+
+.oke {
+    font-size: 2em;
+    position: relative;
+    top: 350px;
+    text-shadow: 2px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron span {
+    color: green;
+}
+
+nav {
+    display: flex;
+    background-color: darkgreen;
+    justify-content: space-around;
+    /*padding: 20px 0;*/
+    height: 50px;
+    align-items: center;
+    color: white;
+    box-shadow: 1px 9px 13px 2px black;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    margin-right: 80px;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .logo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.3em;
+}
+
+/*Hamburger Menu*/
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: -5px;
+    top: -5PX;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* Hamburger Animation */
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    transform: scale(0);
+}
+
+/*
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 1.5em;
+    padding: 5px 5px 5px 5px;
+}
+
+nav {
+    background-color: darkgreen;
+    opacity: 90%;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    top: -32px;
+    height: 50px;
+    text-align: center;
+    box-shadow: 1px 9px 13px 2px black;
+    position: sticky;
+    top: 0;
+}
+
+*/
+
+figcaption {
+    margin-bottom: 10px;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+figcaption:hover {
+    font-weight: bold;
+}
+
+.team {
+    float: left;
+    width: 75%;
+    margin-top: 50px;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    margin-top: 50px;
+    margin-left: auto;
+}
+
+th,
+td {
+    text-align: left;
+}
+
+main {
+    padding: 50px;
+    overflow: auto;
+}
+
+#Team {
+    margin-top: 10px;
+}
+
+.satu {
+    width: 100%;
+    text-align: center;
+}
+
+.team h2 {
+    background-color: mediumseagreen;
+    border-radius: 10px;
+    text-align: center;
+}
+
+article h2 {
+    font-size: 3em;
+    margin: 30px 0 3px 0;
+    text-shadow: 1px 1px 5px rgba(27, 226, 127, 0.67);
+}
+
+.satu p {
+    font-size: 2em;
+}
+
+.info {
+    object-fit: cover;
+    object-position: center;
+    text-align: center;
+}
+
+.profil img {
+    object-position: center;
+    min-width: 50%;
+}
+
+.container-flex-column {
+    display: flex;
+
+    /* properti lain */
+    width: 100%;
+    padding: 10px;
+    object-position: center;
+}
+
+.box {
+    flex-grow: 1;
+    margin-right: 30px;
+    padding: 2px;
+    border-radius: 10px;
+    border: 4px solid mediumseagreen;
+    text-align: center;
+    font-size: 1.2em;
+    object-position: center;
+    width: 100%;
+    min-width: 30%;
+    cursor: pointer;
+}
+
+.box img {
+    width: 250px;
+    height: 250px;
+}
+
+.founder img {
+    width: 200px;
+}
+
+.info p {
+    font-size: 1.4em;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.card {
+    box-shadow: 1px 9px 13px 2px rgba(27, 226, 127, 0.67);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: darkgreen;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive Breakpoint */
+
+/* Ukuran Tablet */
+
+@media screen and (max-widht: 768px) {
+    nav ul {
+        width: 50%;
+    }
+
+    .pertama img {
+        width: fit-content;
+    }
+
+
+    .kedua img {
+        width: 100px;
+    }
+
+
+    .ketiga figure {
+        min-width: 5%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+}
+
+/* Ukuran Mobile Iphone Or Android */
+
+@media screen and (max-width: 513px) {
+
+
+    nav {
+        height: 60px;
+    }
+
+    nav ul {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: darkgreen;
+        z-index: -1;
+        transform: translateX(-100%);
+        transition: all 1s;
+        opacity: 0;
+
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0)
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .jumbotron {
+        display: none;
+    }
+
+    .oke {
+        font-size: 2em;
+        position: relative;
+        top: 50px;
+        text-shadow: 2px 1px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .profil h2 {
+        background-color: white;
+        font-size: 2em;
+    }
+
+
+    .team {
+        width: 100%;
+        text-align: center;
+        background-color: white;
+    }
+
+    .team h2 {
+        font-size: 2em;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .container-flex-column {
+        flex-direction: column;
+    }
+
+}
